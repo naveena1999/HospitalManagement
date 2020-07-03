@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+ <display-name>TCS</display-name>
+ <welcome-file-list>
+    <welcome-file>JSP/Login.jsp</welcome-file>
+ </welcome-file-list>
+ <servlet>
+     <description></description>
+     <display-name>LoginServlet</display-name>
+     <servlet-name>LoginServlet</servlet-name>
+     <servlet-class>com.login.controller.LoginServlet</servlet-class>
+ </servlet>
+ <servlet>
+     <description></description>
+     <display-name>testservlet</display-name>
+     <servlet-name>testservlet</servlet-name>
+     <servlet-class>com.login.controller.testservlet</servlet-class>
+ </servlet>
+ <servlet>
+     <description></description>
+     <display-name>medicine</display-name>
+     <servlet-name>medicine</servlet-name>
+     <servlet-class>com.login.controller.medicine</servlet-class>
+ </servlet>
+ <servlet>
+     <description></description>
+     <display-name>SearchServlet</display-name>
+     <servlet-name>SearchServlet</servlet-name>
+     <servlet-class>com.login.controller.SearchServlet</servlet-class>
+ </servlet>
+  <servlet>
+     <description></description>
+     <display-name>DeleteServlet</display-name>
+     <servlet-name>DeleteServlet</servlet-name>
+     <servlet-class>com.login.controller.DeleteServlet</servlet-class>
+ </servlet>
+  
+ <servlet>
+     <description></description>
+     <display-name>PatientRegistrationController</display-name>
+     <servlet-name>PatientRegistrationController</servlet-name>
+     <servlet-class>com.login.controller.PatientRegistrationController</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+     <servlet-name>PatientRegistrationController</servlet-name>
+     <url-pattern>/PatientRegistrationController</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>medicine</servlet-name>
+     <url-pattern>/medicine</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>SearchServlet</servlet-name>
+     <url-pattern>/SearchServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>DeleteServlet</servlet-name>
+     <url-pattern>/DeleteServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+     <servlet-name>LoginServlet</servlet-name>
+     <url-pattern>/LoginServlet</url-pattern>
+ </servlet-mapping>
+<servlet-mapping>
+     <servlet-name>testservlet</servlet-name>
+     <url-pattern>/testservlet</url-pattern>
+ </servlet-mapping>
+
+ 
+</web-app>
